@@ -58,13 +58,14 @@
             quảnLýToolStripMenuItem = new ToolStripMenuItem();
             quảnLýNhânViênToolStripMenuItem = new ToolStripMenuItem();
             mónĂnToolStripMenuItem = new ToolStripMenuItem();
+            btnTim = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView12).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btnSua
             // 
-            btnSua.Location = new Point(528, 39);
+            btnSua.Location = new Point(525, 52);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(96, 27);
             btnSua.TabIndex = 29;
@@ -74,7 +75,7 @@
             // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(528, 99);
+            btnXoa.Location = new Point(525, 112);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(96, 23);
             btnXoa.TabIndex = 28;
@@ -84,7 +85,7 @@
             // 
             // btnThem
             // 
-            btnThem.Location = new Point(528, 143);
+            btnThem.Location = new Point(525, 156);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(96, 32);
             btnThem.TabIndex = 27;
@@ -95,7 +96,7 @@
             // label5
             // 
             label5.Font = new Font("Segoe UI", 10F);
-            label5.Location = new Point(256, 98);
+            label5.Location = new Point(253, 111);
             label5.Name = "label5";
             label5.Size = new Size(95, 23);
             label5.TabIndex = 25;
@@ -104,7 +105,7 @@
             // label4
             // 
             label4.Font = new Font("Segoe UI", 10F);
-            label4.Location = new Point(256, 43);
+            label4.Location = new Point(253, 56);
             label4.Name = "label4";
             label4.Size = new Size(95, 23);
             label4.TabIndex = 24;
@@ -113,7 +114,7 @@
             // d
             // 
             d.Font = new Font("Segoe UI", 10F);
-            d.Location = new Point(22, 156);
+            d.Location = new Point(19, 169);
             d.Name = "d";
             d.Size = new Size(100, 23);
             d.TabIndex = 23;
@@ -122,7 +123,7 @@
             // ád
             // 
             ád.Font = new Font("Segoe UI", 10F);
-            ád.Location = new Point(22, 97);
+            ád.Location = new Point(19, 110);
             ád.Name = "ád";
             ád.Size = new Size(100, 23);
             ád.TabIndex = 22;
@@ -131,7 +132,7 @@
             // lbl
             // 
             lbl.Font = new Font("Segoe UI", 10F);
-            lbl.Location = new Point(22, 43);
+            lbl.Location = new Point(19, 56);
             lbl.Name = "lbl";
             lbl.Size = new Size(100, 23);
             lbl.TabIndex = 21;
@@ -139,7 +140,7 @@
             // 
             // txtTen
             // 
-            txtTen.Location = new Point(128, 97);
+            txtTen.Location = new Point(125, 110);
             txtTen.Name = "txtTen";
             txtTen.Size = new Size(100, 23);
             txtTen.TabIndex = 20;
@@ -147,7 +148,7 @@
             // 
             // txtTuoi
             // 
-            txtTuoi.Location = new Point(128, 155);
+            txtTuoi.Location = new Point(125, 168);
             txtTuoi.Name = "txtTuoi";
             txtTuoi.Size = new Size(100, 23);
             txtTuoi.TabIndex = 19;
@@ -155,14 +156,14 @@
             // 
             // txtLuong
             // 
-            txtLuong.Location = new Point(357, 99);
+            txtLuong.Location = new Point(354, 112);
             txtLuong.Name = "txtLuong";
             txtLuong.Size = new Size(121, 23);
             txtLuong.TabIndex = 18;
             // 
             // txtMa
             // 
-            txtMa.Location = new Point(128, 40);
+            txtMa.Location = new Point(125, 53);
             txtMa.Name = "txtMa";
             txtMa.Size = new Size(100, 23);
             txtMa.TabIndex = 17;
@@ -171,16 +172,16 @@
             // dataGridView12
             // 
             dataGridView12.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView12.Location = new Point(-1, 232);
+            dataGridView12.Location = new Point(-1, 256);
             dataGridView12.Name = "dataGridView12";
-            dataGridView12.Size = new Size(803, 219);
+            dataGridView12.Size = new Size(803, 195);
             dataGridView12.TabIndex = 16;
             dataGridView12.CellClick += dataGridView1_CellContentClick;
             dataGridView12.CellContentClick += dataGridView1_CellContentClick;
             // 
             // txtDiaChi
             // 
-            txtDiaChi.Location = new Point(357, 43);
+            txtDiaChi.Location = new Point(354, 56);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.Size = new Size(121, 23);
             txtDiaChi.TabIndex = 30;
@@ -188,7 +189,7 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 10F);
-            label1.Location = new Point(256, 200);
+            label1.Location = new Point(253, 213);
             label1.Name = "label1";
             label1.Size = new Size(95, 23);
             label1.TabIndex = 31;
@@ -197,14 +198,14 @@
             // dtpNgayVaoLam
             // 
             dtpNgayVaoLam.Format = DateTimePickerFormat.Short;
-            dtpNgayVaoLam.Location = new Point(361, 200);
+            dtpNgayVaoLam.Location = new Point(358, 213);
             dtpNgayVaoLam.Name = "dtpNgayVaoLam";
             dtpNgayVaoLam.Size = new Size(117, 23);
             dtpNgayVaoLam.TabIndex = 32;
             // 
             // button1
             // 
-            button1.Location = new Point(680, 40);
+            button1.Location = new Point(677, 53);
             button1.Name = "button1";
             button1.Size = new Size(96, 26);
             button1.TabIndex = 33;
@@ -214,7 +215,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(680, 87);
+            button2.Location = new Point(677, 100);
             button2.Name = "button2";
             button2.Size = new Size(96, 41);
             button2.TabIndex = 34;
@@ -224,7 +225,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(680, 143);
+            button3.Location = new Point(677, 156);
             button3.Name = "button3";
             button3.Size = new Size(96, 32);
             button3.TabIndex = 35;
@@ -234,14 +235,14 @@
             // 
             // txtDem
             // 
-            txtDem.Location = new Point(680, 203);
+            txtDem.Location = new Point(677, 216);
             txtDem.Name = "txtDem";
             txtDem.Size = new Size(96, 23);
             txtDem.TabIndex = 37;
             // 
             // btnDem
             // 
-            btnDem.Location = new Point(528, 202);
+            btnDem.Location = new Point(525, 215);
             btnDem.Name = "btnDem";
             btnDem.Size = new Size(96, 23);
             btnDem.TabIndex = 36;
@@ -252,7 +253,7 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 10F);
-            label2.Location = new Point(256, 154);
+            label2.Location = new Point(253, 167);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 39;
@@ -260,7 +261,7 @@
             // 
             // txtHeSoLuong
             // 
-            txtHeSoLuong.Location = new Point(357, 155);
+            txtHeSoLuong.Location = new Point(354, 168);
             txtHeSoLuong.Name = "txtHeSoLuong";
             txtHeSoLuong.Size = new Size(121, 23);
             txtHeSoLuong.TabIndex = 38;
@@ -284,15 +285,16 @@
             // đăngXuấtToolStripMenuItem
             // 
             đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(128, 22);
+            đăngXuấtToolStripMenuItem.Size = new Size(180, 22);
             đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
             // thoátToolStripMenuItem
             // 
             thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            thoátToolStripMenuItem.Size = new Size(128, 22);
+            thoátToolStripMenuItem.Size = new Size(180, 22);
             thoátToolStripMenuItem.Text = "Thoát";
+            thoátToolStripMenuItem.Click += thoátToolStripMenuItem_Click_1;
             // 
             // quảnLýToolStripMenuItem
             // 
@@ -316,11 +318,22 @@
             mónĂnToolStripMenuItem.Text = "Món ăn";
             mónĂnToolStripMenuItem.Click += mónĂnToolStripMenuItem_Click_1;
             // 
+            // btnTim
+            // 
+            btnTim.Location = new Point(62, 211);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(125, 23);
+            btnTim.TabIndex = 41;
+            btnTim.Text = "Tìm theo mã";
+            btnTim.UseVisualStyleBackColor = true;
+            btnTim.Click += btnTim_Click;
+            // 
             // QuanLyNhanVien
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnTim);
             Controls.Add(label2);
             Controls.Add(txtHeSoLuong);
             Controls.Add(txtDem);
@@ -388,5 +401,6 @@
         private ToolStripMenuItem quảnLýToolStripMenuItem;
         private ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;
         private ToolStripMenuItem mónĂnToolStripMenuItem;
+        private Button btnTim;
     }
 }

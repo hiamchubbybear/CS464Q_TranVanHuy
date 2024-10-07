@@ -35,8 +35,9 @@ namespace QuanLyNhaHang
         }
         public void handleBackGround()
         {
-            Image myimage = new Bitmap(@"C:\Users\hiamchubbybear\source\repos\QuanLyNhaHang\QuanLyNhaHang\BIWhA8N (1).jpg");
+            Image myimage = new Bitmap(@"C:\Users\hiamchubbybear\source\repos\QuanLyNhaHang\QuanLyNhaHang\milky-way-starry-sky-night-sky-star-956981.jpeg");
             this.BackgroundImage = myimage;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {

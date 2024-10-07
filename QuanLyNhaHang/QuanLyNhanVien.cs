@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace QuanLyNhaHang
         {
             InitializeComponent();
             loadNhanVien();
+            handleBackGround();
         }
         public String duongDan = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hiamchubbybear\\source\\repos\\QuanLyNhaHang\\QuanLyNhaHang\\QuanLySinhVien.mdf;Integrated Security=True";
 
@@ -37,7 +39,12 @@ namespace QuanLyNhaHang
         {
 
         }
-
+        public void handleBackGround()
+        {
+            Image myimage = new Bitmap(@"C:\Users\hiamchubbybear\source\repos\QuanLyNhaHang\QuanLyNhaHang\milky-way-starry-sky-night-sky-star-956981.jpeg");
+            this.BackgroundImage = myimage;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
         private void txtGia_TextChanged(object sender, EventArgs e)
         {
 
@@ -129,7 +136,7 @@ namespace QuanLyNhaHang
         private void btnXoa_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(duongDan);
-            String sqlXoa = "delete from monan where id = @id";
+            String sqlXoa = "delete from nhanvien where id = @id";
             SqlCommand comm = new SqlCommand(sqlXoa, conn);
             comm.Parameters.AddWithValue("@id", txtMa.Text);
             conn.Open();
@@ -245,7 +252,7 @@ namespace QuanLyNhaHang
 
         private void mónĂnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -263,7 +270,7 @@ namespace QuanLyNhaHang
 
         private void quảnLýToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void mónĂnToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -271,6 +278,43 @@ namespace QuanLyNhaHang
             QuanLyMonAn nhanvien = new QuanLyMonAn();
             nhanvien.Show();
             this.Hide();
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(duongDan);
+            String sql = "SELECT * from nhanvien where id =@ma ";
+            SqlCommand comm = new SqlCommand(sql, conn);
+            comm.Parameters.AddWithValue("@ma", txtMa.Text);
+            conn.Open();
+            String ten = null, tuoi = null, diachi = null, luong = null, ngayvaolam = null, hesoluong = null;
+            using (SqlDataReader oReader = comm.ExecuteReader())
+            {
+                while (oReader.Read())
+                {
+                    ten = oReader["ten"].ToString();
+                    tuoi = oReader["tuoi"].ToString();
+                    diachi = oReader["diachi"].ToString();
+                    luong = oReader["luong"].ToString();
+                    ngayvaolam = oReader["ngayvaolam"].ToString();
+                    hesoluong = oReader["hesoluong"].ToString();
+                }
+                MessageBox.Show("Tên : " + ten + "Tuổi : " + tuoi + " Địa chỉ : " + diachi + " Lương : " + luong + "Ngày vào làm : " + ngayvaolam + "Hệ số lương : " + hesoluong);
+
+                conn.Close();
+            }
+
+
+
+        }
+        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có muốn thoát không ?", "Thông báo",
+                           MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

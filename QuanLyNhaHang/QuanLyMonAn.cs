@@ -17,7 +17,7 @@ namespace QuanLyNhaHang
         {
 
             InitializeComponent();
-            loadCB();
+            loadCB(); handleBackGround();
             loadMonAn();
         }
         ProcessHandle processHandle = new ProcessHandle();
@@ -34,6 +34,12 @@ namespace QuanLyNhaHang
         private void QuanLyMonAn_Load(object sender, EventArgs e)
         {
 
+        }
+        public void handleBackGround()
+        {
+            Image myimage = new Bitmap(@"C:\Users\hiamchubbybear\source\repos\QuanLyNhaHang\QuanLyNhaHang\milky-way-starry-sky-night-sky-star-956981.jpeg");
+            this.BackgroundImage = myimage;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
         }
         public void loadCB( )
         {
