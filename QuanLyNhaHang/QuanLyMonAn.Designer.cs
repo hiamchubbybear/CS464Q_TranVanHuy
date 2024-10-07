@@ -151,7 +151,7 @@
             // 
             // btnThem
             // 
-            btnThem.Location = new Point(425, 193);
+            btnThem.Location = new Point(488, 145);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(121, 23);
             btnThem.TabIndex = 13;
@@ -161,7 +161,7 @@
             // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(23, 193);
+            btnXoa.Location = new Point(649, 147);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(100, 23);
             btnXoa.TabIndex = 14;
@@ -171,7 +171,7 @@
             // 
             // btnSua
             // 
-            btnSua.Location = new Point(230, 193);
+            btnSua.Location = new Point(338, 145);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(100, 23);
             btnSua.TabIndex = 15;
@@ -247,14 +247,14 @@
             // mónĂnToolStripMenuItem
             // 
             mónĂnToolStripMenuItem.Name = "mónĂnToolStripMenuItem";
-            mónĂnToolStripMenuItem.Size = new Size(180, 22);
+            mónĂnToolStripMenuItem.Size = new Size(128, 22);
             mónĂnToolStripMenuItem.Text = "Món ăn";
             mónĂnToolStripMenuItem.Click += mónĂnToolStripMenuItem_Click;
             // 
             // nhânViênToolStripMenuItem
             // 
             nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            nhânViênToolStripMenuItem.Size = new Size(180, 22);
+            nhânViênToolStripMenuItem.Size = new Size(128, 22);
             nhânViênToolStripMenuItem.Text = "Nhân viên";
             nhânViênToolStripMenuItem.Click += nhânViênToolStripMenuItem_Click_1;
             // 
